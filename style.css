@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+#crypto-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.crypto-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.crypto-card button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crypto-card button:hover {
+    background-color: #45a049;
+}
+
+#comparison {
+    margin-top: 40px;
+}
+
+#preferences {
+    margin-top: 20px;
+}
+
+.filter-select, .theme-picker {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.theme-picker {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .crypto-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .crypto-card {
+        width: 100%;
+    }
+}
